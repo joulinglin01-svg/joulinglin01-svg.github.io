@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林柔伶 Jouling Lin | MR Core Algorithm Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .scroll-hidden::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-50 antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-sm border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="text-xl font-bold tracking-wider">JOULING<span class="text-blue-400">.LIN</span></div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-blue-400 transition duration-300">關於我</a>
+                        <a href="#skills" class="hover:text-blue-400 transition duration-300">核心技能</a>
+                        <a href="#projects" class="hover:text-blue-400 transition duration-300">精選專案</a>
+                        <a href="#leadership" class="hover:text-blue-400 transition duration-300">研發領導</a>
+                        <a href="#contact" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md transition duration-300">聯絡我</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <div class="inline-block px-3 py-1 mb-4 text-sm font-semibold tracking-wider text-blue-400 uppercase bg-blue-900/30 rounded-full border border-blue-800">
+                    Portfolio
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    混合實境的核心<br>
+                    <span class="gradient-text">演算法與架構優化</span>
+                </h1>
+                <p class="text-lg text-slate-400 mb-8 max-w-lg mx-auto md:mx-0">
+                    我是林柔伶，專精於 MR 核心演算法開發、Linux 架構遷移與效能瓶頸分析。具備從底層部署到上層互動的完整實戰經驗。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition duration-300 text-center">
+                        查看專案
+                    </a>
+                    <a href="resume.pdf" target="_blank" class="px-8 py-3 border border-slate-600 hover:border-slate-400 hover:bg-slate-800 rounded-lg font-medium transition duration-300 text-center">
+                        下載履歷 (PDF)
+                    </a>
+                </div>
+                <!-- Stats -->
+                <div class="mt-12 grid grid-cols-3 gap-6 border-t border-slate-800 pt-8">
+                    <div>
+                        <div class="text-3xl font-bold text-white">Top 3</div>
+                        <div class="text-sm text-slate-500">碩士班排名</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">1st</div>
+                        <div class="text-sm text-slate-500">未來科技獎</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">4yr+</div>
+                        <div class="text-sm text-slate-500">獨立工讀經驗</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Placeholder for Photo -->
+            <div class="md:w-1/2 flex justify-center relative">
+                <div class="w-72 h-72 md:w-96 md:h-96 bg-slate-800 rounded-full flex items-center justify-center border-4 border-slate-700 overflow-hidden relative shadow-2xl shadow-blue-500/20">
+                    <!-- Replace src with your actual photo path -->
+                    <img src="your-photo.jpg" alt="林柔伶" class="w-full h-full object-cover">
+                </div>
+                <!-- Floating Badges -->
+                <div class="absolute top-10 right-10 bg-slate-800 p-3 rounded-lg border border-slate-700 shadow-lg animate-bounce" style="animation-duration: 3s;">
+                    <i class="fab fa-unity text-white text-2xl"></i>
+                </div>
+                <div class="absolute bottom-10 left-10 bg-slate-800 p-3 rounded-lg border border-slate-700 shadow-lg animate-bounce" style="animation-duration: 4s;">
+                    <i class="fas fa-cube text-blue-400 text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">核心技術堆疊</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-4 text-blue-400">
+                        <i class="fas fa-code text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">程式語言</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">C# (Unity)</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">Python</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">C/C++</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">SQL</span>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-purple-900/30 rounded-lg flex items-center justify-center mb-4 text-purple-400">
+                        <i class="fas fa-vr-cardboard text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">混合實境 (MR)</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">MRTK</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">HoloLens 2</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">Quest Pro</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">Unity 3D</span>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-green-900/30 rounded-lg flex items-center justify-center mb-4 text-green-400">
+                        <i class="fas fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI 與 演算法</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">OpenAI API</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">RAG</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">LARR Algorithm</span>
+                    </div>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <div class="w-12 h-12 bg-orange-900/30 rounded-lg flex items-center justify-center mb-4 text-orange-400">
+                        <i class="fas fa-cloud text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">雲端與部署</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">Kubernetes</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">Docker</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded text-sm text-slate-300">Linux + QEMU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">精選研發專案</h2>
+            <div class="space-y-20">
+                
+                <!-- Project 1 -->
+                <div class="flex flex-col lg:flex-row gap-10 items-start">
+                    <div class="lg:w-1/2 w-full">
+                        <!-- Video Embed -->
+                        <div class="aspect-video bg-slate-800 rounded-xl overflow-hidden shadow-2xl border border-slate-700 relative group">
+                            <!-- Replace src with correct embed URL -->
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/ZgdKcYWlclg" title="MMTC Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-xs font-bold rounded-full">旗艦專案</span>
+                            <span class="text-slate-500 text-sm">產學合作 | 碩士論文</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">雲端化 AI MR 智慧互動系統</h3>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            針對傳統單機 MR 系統擴展性不足的問題，建置基於 Kubernetes 的雲端算繪平台。透過系統模組化與 AI 微服務整合，實現具備專業知識的即時互動體驗。
+                        </p>
+                        
+                        <div class="bg-slate-800/50 p-4 rounded-lg border-l-4 border-blue-500 mb-6">
+                            <h4 class="text-white font-semibold mb-2">我的關鍵貢獻 (My Role: Core Algorithm & Migration Lead)</h4>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-blue-400"></i> 診斷 Windows Container 環境效能瓶頸，確認資源調度限制。</li>
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-blue-400"></i> 負責將 MR 核心應用成功<b>遷移並部署至 Linux + QEMU</b> 新架構。</li>
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-blue-400"></i> 與 AI 團隊協作整合 Realtime API，確保前端渲染與後端語音同步。</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Kubernetes</span>
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">QEMU</span>
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">AI Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="flex flex-col lg:flex-row-reverse gap-10 items-start">
+                    <div class="lg:w-1/2 w-full">
+                        <div class="aspect-video bg-slate-800 rounded-xl overflow-hidden shadow-2xl border border-slate-700">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/VhoY_LBc5yY" title="Future Tech Award Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs font-bold rounded-full">榮獲未來科技獎</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">多人混合實境遠端算繪平台</h3>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            利用 LARR (定位輔助遠端算繪) 架構消除網路延遲造成的視覺誤差，支援多人在同一虛擬空間進行高精度的光學實驗互動。
+                        </p>
+                        
+                        <div class="bg-slate-800/50 p-4 rounded-lg border-l-4 border-yellow-500 mb-6">
+                            <h4 class="text-white font-semibold mb-2">我的關鍵貢獻 (My Role: Core Implementation)</h4>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-yellow-400"></i> 實作物件串流相機 (OSC) 機制，將定位誤差降至傳統方法 <b>0.1 倍以下</b>。</li>
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-yellow-400"></i> 成功於大型展會 (TIE) 進行實體展示，驗證系統在多人環境下的穩定性。</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">LARR Algorithm</span>
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">HoloLens 2</span>
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">J7EF Glasses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="flex flex-col lg:flex-row gap-10 items-start">
+                    <div class="lg:w-1/2 w-full">
+                        <div class="aspect-video bg-slate-800 rounded-xl overflow-hidden shadow-2xl border border-slate-700">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/tXNIqT0SZlU" title="GhostPeT Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded-full">領導與傳承</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">MR. GhostPeT 沉浸式虛擬寵物</h3>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            跨裝置的沉浸式虛擬寵物系統，透過 AI 語音辨識與情緒分析，提供具備「個性」的虛擬陪伴體驗。
+                        </p>
+                        
+                        <div class="bg-slate-800/50 p-4 rounded-lg border-l-4 border-emerald-500 mb-6">
+                            <h4 class="text-white font-semibold mb-2">我的關鍵貢獻 (My Role: Team Lead & Mentor)</h4>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-emerald-400"></i> <b>技術導師：</b>指導解決 Quest Pro 與 HoloLens 2 座標系統不一致的技術難題。</li>
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-emerald-400"></i> <b>架構傳承：</b>協助團隊排除底層 LARR 架構障礙，使其專注於上層應用開發。</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Leadership</span>
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Cross-device Sync</span>
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Grant Writing Section -->
+    <section id="leadership" class="py-20 bg-gradient-to-b from-slate-900 to-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white shadow-lg shadow-blue-600/30">
+                <i class="fas fa-pen-nib text-2xl"></i>
+            </div>
+            <h2 class="text-3xl font-bold mb-6">研發領導與計畫管理</h2>
+            <p class="text-lg text-slate-300 mb-10">
+                除了技術實作，我具備宏觀的技術視野與大型科研專案的架構規劃能力。
+            </p>
+            
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 text-left relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <i class="fas fa-file-signature text-9xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">國科會前瞻延展實境智慧顯示科技專案計畫</h3>
+                <p class="text-blue-400 text-sm font-bold mb-6 uppercase tracking-wide">計畫書撰寫總召 (Lead Proposal Writer)</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-slate-200 mb-2">核心職責</h4>
+                        <ul class="space-y-2 text-slate-400 text-sm">
+                            <li>• 規劃「混合實境場域智慧部署」子計畫研發藍圖。</li>
+                            <li>• 定義從基礎容器化到深度雲端整合的 4 年期技術路線圖。</li>
+                            <li>• 與教授討論並設定關鍵績效指標 (KPI)。</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-200 mb-2">價值體現</h4>
+                        <ul class="space-y-2 text-slate-400 text-sm">
+                            <li>• 展現將抽象研究目標轉化為具體執行方案的能力。</li>
+                            <li>• 統籌跨領域成員產出，確保計畫書邏輯一致。</li>
+                            <li>• 具備專案經理 (PM) 思維與溝通協調軟實力。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="contact" class="py-12 border-t border-slate-800 bg-slate-900 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Let's Connect</h2>
+            <p class="text-slate-400 mb-8">
+                感謝您花時間閱讀我的作品集。如果您正在尋找一位兼具技術深度與解決問題能力的研發工程師，歡迎隨時聯繫。
+            </p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="mailto:joulinglin01@gmail.com" class="flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition duration-300">
+                    <i class="fas fa-envelope text-blue-400"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="tel:0978551699" class="flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition duration-300">
+                    <i class="fas fa-phone text-emerald-400"></i>
+                    <span>0978-551-699</span>
+                </a>
+            </div>
+            <p class="text-slate-600 text-sm">
+                &copy; 2025 Jouling Lin. All rights reserved. Built for Interview Portfolio.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
