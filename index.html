@@ -64,15 +64,19 @@
                     </a>
                 </div>
                 <!-- Stats -->
-                <div class="mt-12 grid grid-cols-3 gap-9 border-t border-slate-800 pt-8">
+                <div class="mt-12 grid grid-cols-4 gap-9 border-t border-slate-800 pt-8">
                     <div>
                         <div class="text-3xl font-bold text-white">Top 3</div>
                         <div class="text-sm text-slate-500">碩士班排名</div>
                     </div>
                     <div>
+                        <div class="text-3xl font-bold text-white">Top 11</div>
+                        <div class="text-sm text-slate-500">學士班排名</div>
+                    </div>
+                    <div>
                         <div class="text-3xl font-bold text-white">榮獲</div>
-                        <div class="text-sm text-slate-500">IEEEComSocGoldAward</div>
-                        <div class="text-sm text-slate-500">未來科技獎</div>
+                        <div class="text-sm text-slate-500">2025IEEEComSocGoldAward</div>
+                        <div class="text-sm text-slate-500">2023未來科技獎</div>
                     </div>
                     <div>
                         <div class="text-3xl font-bold text-white">4yr+</div>
@@ -197,7 +201,44 @@
                         </div>
                     </div>
                 </div>
+                <div class="flex flex-col lg:flex-row-reverse gap-10 items-start">
+                    <div class="lg:w-1/2 w-full">
+                        <a href="https://youtu.be/ZgdKcYWlclg" target="_blank" class="block aspect-video bg-slate-800 rounded-xl overflow-hidden shadow-2xl border border-slate-700 relative group">
+                            <!-- 請準備 project-ieee.jpg -->
+                            <img src="project-ieee.jpg" onerror="this.src='https://placehold.co/600x400/1e293b/475569?text=IEEE+Gold+Project+Screenshot'" alt="IEEE 金獎專案" class="w-full h-full object-cover transition duration-300 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-16 h-16 bg-yellow-600/90 rounded-full flex items-center justify-center pl-1 shadow-lg group-hover:scale-110 transition duration-300">
+                                    <i class="fas fa-play text-white text-2xl"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <div class="flex items-center gap-2 mb-2 flex-wrap">
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs font-bold rounded-full">榮獲2025IEEEComSocGoldAward</span>
+                            <span class="text-slate-500 text-sm">技術競賽獲獎作品</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">基於本地定位之 MR 遠端算繪延遲補償</h3>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            提出基於圖論的串流優化框架 (GOS)，解決遠端算繪中的網路延遲挑戰。系統動態建模使用者與物件的互動關係，最大化頻寬效率並最小化延遲，實現無縫的多人 MR 體驗。
+                        </p>
+                        
+                        <div class="bg-slate-800/50 p-4 rounded-lg border-l-4 border-yellow-600 mb-6">
+                            <h4 class="text-white font-semibold mb-2">我的關鍵貢獻 (My Role: Key Technical Contributor)</h4>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-yellow-500"></i> <b>GOS 框架：</b>參與動態圖模型 (Position/Interaction/Streaming Graph) 設計，協助智慧分配串流品質。</li>
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-yellow-500"></i> <b>頻寬優化：</b>通過實驗驗證 GOS 在維持視覺品質的同時，顯著降低了頻寬消耗。</li>
+                                <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-yellow-500"></i> <b>AI 語音整合：</b>協作整合 Realtime API，實現自然的語音互動，增強 MR 體驗的豐富度。</li>
+                            </ul>
+                        </div>
 
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Graph Theory</span>
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Streaming Optimization</span>
+                            <span class="px-3 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Delay Compensation</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project 2 -->
                 <div class="flex flex-col lg:flex-row-reverse gap-10 items-start">
                     <div class="lg:w-1/2 w-full">
@@ -207,7 +248,7 @@
                     </div>
                     <div class="lg:w-1/2 w-full">
                         <div class="flex items-center gap-2 mb-2">
-                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs font-bold rounded-full">榮獲未來科技獎</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs font-bold rounded-full">榮獲2023未來科技獎</span>
                         </div>
                         <h3 class="text-2xl font-bold mb-4">多人混合實境遠端算繪平台</h3>
                         <p class="text-slate-400 mb-6 leading-relaxed">
@@ -362,6 +403,7 @@
 </body>
 
 </html>
+
 
 
 
